@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Walify - Muhammed Shufiyan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/modernizr.js"></script>
+    <style>
+        .project-detail-section {
+            padding: 150px 0;
+            background-color: #111;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .project-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .project-description {
+            font-size: 1.2rem;
+            color: #cfcfcf;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 60px;
+            background: #252525;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #333;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-video {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            display: block;
+        }
+
+        .video-placeholder {
+            color: #666;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            color: #fba820;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-project {
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-apk {
+            background-color: #fba820;
+            color: #000;
+        }
+
+        .btn-apk:hover {
+            background-color: #e69b1f;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(251, 168, 32, 0.3);
+        }
+
+        .btn-github {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .btn-github:hover {
+            background-color: #fff;
+            color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        @media screen and (max-width: 768px) {
+            .project-title {
+                font-size: 2.5rem;
+            }
+
+            .project-detail-section {
+                padding: 100px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="entire-wrapper">
+        <header id="header">
+            <div class="header-wrap">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="images/shufiyan_logo_nobackground.png" alt="logo">
+                    </a>
+                </div>
+                <nav id="navbar">
+                    <div class="top-menu" id="navigation">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item active"><a href="#">Project Detail</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="project-detail-section">
+                <div class="container">
+                    <div class="project-header">
+                        <h1 class="project-title">Walify – <span class="colored">Wallpaper App</span></h1>
+                        <p class="project-description">
+                            Built “Walify,” a feature-rich Flutter wallpaper application that provides users with
+                            high-quality
+                            backgrounds sourced via API. It features offline support for saved images, robust state
+                            management using Provider, and a sleek, high-performance UI designed for a premium user
+                            experience.
+                        </p>
+                    </div>
+
+                    <div class="video-container">
+                        <video controls poster="images/walify_logo.png" class="project-video">
+                            <source src="images/walify_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="https://drive.google.com/file/d/1d36nqGtX3nvsvY9Dq1FpFrShOiuWUVYY/view?usp=sharing"
+                            target="_blank" class="btn-project btn-apk">
+                            <span class="iconify" data-icon="bi:download"></span> Download APK
+                        </a>
+                        <a href="https://github.com/sufiyan454/Walify" target="_blank" class="btn-project btn-github">
+                            <span class="iconify" data-icon="bi:github"></span> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="inner-content">
+                        <div class="grid">
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/muhammed-shufiyan-m-a-a16bb32a8"
+                                            target="_blank"><span class="iconify"
+                                                data-icon="akar-icons:linkedin-fill"></span></a></li>
+                                    <li><a href="https://github.com/sufiyan454" target="_blank"><span class="iconify"
+                                                data-icon="akar-icons:github-fill"></span></a></li>
+                                    <li><a href="https://www.instagram.com/m_sufiyan._/" target="_blank"><span
+                                                class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
+                                    <li><a href="mailto:muhammedshufiyan5@gmail.com"><span class="iconify"
+                                                data-icon="clarity:email-solid"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
