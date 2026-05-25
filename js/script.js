@@ -14,7 +14,7 @@
  $(document).ready(function(){
       
 	$('.service-slider').slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplaySpeed: 2000,
       dots: true,
@@ -22,14 +22,14 @@
         {
           breakpoint: 1500,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 1,
           }
         },
         {
           breakpoint: 800,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
           }
@@ -50,16 +50,31 @@
 
 
 
-// close when click off of container
+// Menu toggle functionality
 $(document).on('click touchstart', function (e){
-
   var x = document.getElementById("navigation");
-  if (x.className === "top-menu") {
-    x.className += " menu-bar";
-  } else {
+  var barIcon = e.target.closest('.bar-icon');
+  var column = e.target.closest('.column');
+  
+  // If clicking on a project column, don't toggle menu
+  if (column) {
+    return;
+  }
+  
+  // If clicking on menu icon, toggle menu
+  if (barIcon) {
+    if (x.className === "top-menu") {
+      x.className = "top-menu menu-bar";
+    } else {
+      x.className = "top-menu";
+    }
+    return;
+  }
+  
+  // If menu is open and clicking outside, close it
+  if (x.className === "top-menu menu-bar") {
     x.className = "top-menu";
   }
-
 });
 
 const tabs = document.querySelectorAll('[data-tab-target]')
