@@ -53,10 +53,10 @@
 						</ul>
 
 						<div class="menu-icon">
-							<a href="javascript:void(0);" class="bar-icon" onclick="e">
+							<a href="javascript:void(0);" class="bar-icon">
 								<i class="icon icon-segment"></i>
 							</a>
-							<a href="javascript:void(0);" class="bar-icon" onclick="e">
+							<a href="javascript:void(0);" class="bar-icon">
 								<i class="icon icon-close"></i>
 							</a>
 						</div>
@@ -447,6 +447,11 @@
 			once: true,
 			offset: 100
 		});
+		
+		// Reload Iconify icons after page load
+		if (window.Iconify) {
+			window.Iconify.scan();
+		}
 	</script>
 
 </body>
