@@ -51,10 +51,11 @@
 
 
 // Menu toggle functionality
-$(document).on('click touchstart', function (e){
+$(document).on('click', function (e){
   var x = document.getElementById("navigation");
   var barIcon = e.target.closest('.bar-icon');
   var column = e.target.closest('.column');
+  var menuItem = e.target.closest('.menu-item');
   
   // If clicking on a project column, don't toggle menu
   if (column) {
@@ -63,11 +64,18 @@ $(document).on('click touchstart', function (e){
   
   // If clicking on menu icon, toggle menu
   if (barIcon) {
+    e.preventDefault();
     if (x.className === "top-menu") {
       x.className = "top-menu menu-bar";
     } else {
       x.className = "top-menu";
     }
+    return;
+  }
+  
+  // If clicking on menu item, close menu
+  if (menuItem) {
+    x.className = "top-menu";
     return;
   }
   

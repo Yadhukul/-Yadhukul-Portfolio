@@ -555,11 +555,10 @@ span.colored {
       margin: 0;
       padding: 0;
   }
-  #header {
-      position: absolute;
+  #header { position: fixed;
       top: 0;
       width: 100%;
-      z-index: 10;
+      z-index: 100; background: rgba(0, 0, 0, 0.9);
   }
   #header .header-wrap {
       padding: 10px 20px;
@@ -2150,3 +2149,4 @@ span.colored {
         max-height: 200px;
     }
 }
+
