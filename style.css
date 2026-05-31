@@ -473,12 +473,15 @@ span.colored {
 }
 #billboard {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     height: 100vh;
+    background: #000;
 }
 #billboard img.banner-image {
     height: 100vh;
     object-fit: cover;
+    object-position: right;
+    width: 100%;
 }
 #billboard .banner-content {
     position: absolute;
@@ -617,7 +620,8 @@ span.colored {
       margin-top: 30px;
   }
   #about-me .person-information .about-image img {
-      max-width: 100%;
+      max-width: 80%;
+      margin: 0 auto;
   }
 }
 
