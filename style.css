@@ -685,6 +685,10 @@ span.colored {
     line-height: 2.5;
     color: #555;
 }
+#about-me .section-header h2 {
+    font-weight: 700;
+    font-size: 2.8em;
+}
 .person-information .general-button {
     display: flex;
     flex-wrap: wrap;
